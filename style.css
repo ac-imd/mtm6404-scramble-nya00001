@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: hsl(0, 0%, 0%);    
+}
+
+.scramble-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-logo {
+  width: 150px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.scramble-game h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: hsl(0, 0%, 90%);
+}
+
+.scramble-game button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 20%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.start-game-button {
+  background-color: hsl(130, 100%, 66%);
+}
+
+.start-game-button:hover {
+  background-color: hsl(130, 100%, 40%);
+}
+
+.reset-game-button {
+  background-color: hsl(207, 81%, 65%);
+}
+
+.reset-game-button:hover {
+  background-color: hsl(207, 81%, 40%);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container input {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.input-container button {
+  background-color: hsl(130, 100%, 66%);
+}
+
+.input-container button:hover {
+  background-color: hsl(130, 100%, 40%);
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background-color: hsl(0, 0%, 90%);
+  border: 2px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+}
+
+.points {
+  background-color: hsl(130, 100%, 66%);
+}
+
+.strikes {
+  background-color: hsl(0, 81%, 65%);
+}
+
+.passes {
+  background-color: hsl(207, 81%, 65%);
+}
+
+.scrambled-word {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background-color: hsl(0, 0%, 80%);
+  border: 3px solid hsl(0, 0%, 85%);
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: red;
+  background-color: hsl(0, 100%, 90%);
+  border: 2px solid hsl(0, 100%, 80%);
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
