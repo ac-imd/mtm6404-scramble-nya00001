@@ -14,7 +14,7 @@
 function shuffle(src) {
   const copy = [...src];
 
-  const length = copy.length;
+  const length = copy.length; 
   for (let i = 0; i < length; i++) {
     const x = copy[i];
     const y = Math.floor(Math.random() * length);

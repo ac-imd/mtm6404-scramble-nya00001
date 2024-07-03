@@ -16,7 +16,7 @@ body {
 .game-logo {
   width: 150px;
   margin-bottom: 20px;
-  opacity: 0;
+  opacity: 0; 
   animation: fadeIn 2s ease-in forwards;
 }
 
